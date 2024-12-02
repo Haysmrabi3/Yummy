@@ -1,0 +1,1275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap');
+
+:root {
+    --bg-body: #F1F8FF;
+    --bg-section: #fff;
+    --main-color: #FEA116;
+    --hover-color: #feaf39;
+    --span-color: #666565;
+    --second-color: #0F172B;
+    --shadow: 0 0 45px rgba(0, 0, 0, .08)
+}
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.5s;
+}
+
+
+/* navbar start  */
+.navbar {
+    /* background-color: #0f172b8e; */
+    z-index: 3;
+}
+
+.navbar  button  {
+    border: none !important;
+}
+
+.navbar  button i  {
+    color: var(--main-color) !important; 
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.navbar a  {
+    color: white;
+}
+.navbar-brand .Logo{
+    height: 70px; 
+}
+
+
+.navbar-brand figcaption {
+    margin-left: -20px; 
+}
+
+
+.navbar-brand figcaption a {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--main-color) ;
+}
+
+.navbar .active  {
+    color: var(--main-color) !important;
+}
+.navbar a {
+    transition: all 0.7s;
+}
+
+.navbar a:hover {
+    color: var(--hover-color);
+}
+
+@media screen and (max-width : 600px) {
+    .navbar-nav {
+        background-color: #0F172B !important;
+    }
+}
+ 
+/* navbar end  */
+
+
+
+
+
+
+/* Header start  */
+
+.Header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../src/Assets/images/header/bg-hero.jpg');
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+
+ .Head-cap  button {
+    width: 150px;
+    height: 60px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: var(--main-color);
+}
+
+.Head-cap  h1 {
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    color:var(--main-color);
+    font-size: 65px;
+}
+
+  .Head-cap p {
+    font-family: 'Heebo', sans-serif;
+    color: white;
+}
+
+
+.Header .head-pic img {
+    animation: imgRotate 50s linear infinite;
+}
+
+.Header .head-pic {
+    overflow: hidden;
+}
+
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+
+@media  (max-width:1000px) {
+    .Header {
+        text-align: center;
+    }
+}
+@media  (max-width:760px) {
+    .Header .head-pic img {
+        width: 75% !important;
+    }
+}
+
+/* Header end  */
+
+
+
+/* Service start  */
+
+.Service {
+    background-color:var(--bg-body);
+}
+.Services {
+    background-color: red;
+}
+.Service .container {
+    background-color: var(--bg-section);
+}
+
+
+.Service .cart i  {
+        font-size: 50px;
+        color: var(--main-color);
+        margin-block: 10px;
+}
+
+.Service .cart h3 {
+    font-weight: 700;
+    
+}
+
+.Service .cart p {
+    color: var(--span-color);
+    font-size: 18px;
+}
+
+.Service .cart {
+    background-color: var(--bg-section);
+    padding: 20px;
+    transition: all 0.8s;
+    cursor: pointer;
+    
+}
+
+
+.Service .cart:hover  {
+    background-color: var(--hover-color);
+
+    & i , p , h3 {
+        color: white;
+
+    } 
+
+}
+
+/* Service end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Min-head start  */
+
+.Min-Header {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('../src/Assets/images/header/bg-hero.jpg');
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.Min-Header h2 {
+    color: white;
+    font-size: 60px;
+}
+
+.Min-Header p {
+    color: white;
+    font-weight: 600;
+}
+
+.Min-Header p span  {
+color: var(--hover-color);
+font-size: 20px;
+font-weight: 400;
+}
+
+/* Min-head end  */
+
+
+
+
+
+
+
+
+
+
+
+
+/* About start  */
+.About {
+
+    background-color: var(--bg-body);
+}
+.About .img1 , .img2 ,.img3 ,.img4 {
+    cursor: pointer;
+}
+
+.About .img1:hover {
+    translate: -20px -20px ;
+}
+
+.About .img2:hover {
+    translate: 20px -20px ;
+}
+.About .img3:hover {
+    translate: -20px 20px ;
+}
+.About .img4:hover {
+    translate: 20px 20px ;
+}
+.About .container {
+    background-color: var(--bg-section);
+} 
+
+.About .container h2 {
+    font-family: "Gwendolyn", cursive;
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+
+.About .container h3 {
+    font-weight: bold;
+}
+
+.About .container h3 i {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.About .container p {
+     font-family: 'Heebo', sans-serif;
+    color: var(--span-color);
+}
+
+.About .aboutDetails {
+    align-items: center;
+}
+
+.About .aboutDetails .item {
+    display: flex;
+    align-items: center;
+}
+
+
+.About .aboutDetails .item .span1  {
+        font-size: 45px;
+        font-weight: bold;
+        color: var(--main-color);
+        position: relative;
+        padding-inline: 10px;
+}
+
+.About .aboutDetails .item p {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 900 !important;
+}
+
+.About .aboutDetails .span1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+
+.About button {
+    background-color: var(--main-color);
+    height: 60px;
+    width: 150px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+/* About end  */
+
+
+
+
+/* Chefs start  */
+
+.Chefs {
+    background-color: var(--bg-body);
+}
+
+.Chefs .Chefs-head h2{
+    font-family: "Gwendolyn", cursive;
+    color: var(--main-color);
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.Chefs .Chefs-head h2::after {
+    content: '';
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    width: 80px;
+    height: 4px;
+    background-color: var(--main-color);
+}
+.Chefs .Chefs-head h2::before {
+    content: '';
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    width: 80px;
+    height: 4px;
+    background-color: var(--main-color);
+}
+
+.Chefs .Chefs-head p {
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+.Chefs .container  {
+    background-color: var(--bg-section);
+    padding-top: 80px;
+}
+
+
+.Chefs .cover {
+    overflow: hidden;
+    max-height: 77% !important;
+    padding: 20px !important;
+    cursor: pointer;
+    transition: all 0.8s !important;
+}
+
+.Chefs .cart figcaption {
+    text-align: center;
+}
+
+.Chefs .cart figcaption h3 {
+    margin-block: 15px;
+}
+.Chefs .cart figcaption p {
+    color: var(--span-color);
+    font-weight:500;
+    padding-bottom: 10px;
+}
+.Chefs .cover:hover {
+    max-height: 90% !important;
+}
+
+.Chefs .cart ul  {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.Chefs .cart ul li {
+    list-style: none;
+    font-size: 20px;
+    background-color: var(--main-color);
+    padding: 10px;
+    color: white;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .Chefs .cart {
+        margin-inline: 20px;
+        max-height: 82%;
+    }
+}
+
+/* Chefs end  */
+
+
+
+
+
+
+/* FoodMenu start  */
+.Food-Menu {
+    background-color: var(--bg-body);
+}
+.Food-Menu .container {
+    background-color: var(--bg-section);
+}
+.Food-Menu .Food-head h2{
+    font-family: "Gwendolyn", cursive;
+    position: relative;
+    display: inline-block;
+}
+
+
+.Food-Menu .Food-head h2  {
+    color: var(--main-color);
+    font-size: 40px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.Food-Menu .Food-head h2::after  {
+content: '';
+position: absolute;
+left: -80px;
+top: 50%;
+width: 60px;
+height: 2px;
+background-color: var(--main-color);
+}
+
+.Food-Menu .Food-head h2::before {
+content: '';
+position: absolute;
+right: -80px;
+top: 50%;
+width: 60px;
+height: 2px;
+background-color: var(--main-color);
+}
+
+
+.Food-Menu .Food-head h3 {
+    font-weight: 700;
+}
+
+.Nav-meals button {
+        margin: 20px;
+        border: none;
+        font-size: 22px;
+        background-color: white;
+        font-weight: 700;
+        position: relative; 
+        color: var(--span-color);
+}
+
+.Nav-meals {
+    margin-block: 80px;
+}
+
+.Nav-meals .active {
+    color: black;
+}
+.Nav-meals button i {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.Nav-meals .nav-tabs .active::after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: -58%;
+    width: 170px;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+/* FoodMenu end  */
+
+
+
+
+
+
+
+
+
+/* All Meals start  */
+.Meals {
+    background-color:  whitesmoke;
+}
+
+.Meals .Meal-img {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Meals .Meal-img .Layer {
+    height: 100%;
+    width: 100%;
+    background-color: #fea11670;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Meals .Meal-img .Layer figcaption {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    translate: -250%;
+    transition-delay: 0.3s;
+}
+
+.Meals .Meal-img:hover {
+    & .Layer {
+        bottom: 0;
+    } 
+    & figcaption {
+        translate: 0%;
+    }
+}
+
+/* All Meals end  */
+
+
+
+
+
+
+/* MealDetails start  */
+.MealDetails .Meal-D {
+    min-height: 80vh;
+    background-color: var(--bg-body);
+}
+
+.MealDetails .Meal-D .container {
+    background-color: var(--bg-section);
+    padding-top: 90px;
+
+}
+.MealDetails .Meal-info p {
+    height: 200px;
+    overflow: auto;
+    background-color: #F1F8FF;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+            
+ 
+}
+
+.MealDetails .Meal-D .Meal-img {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.MealDetails .Meal-D .Meal-img img {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.MealDetails .Meal-D .Meal-img h3 ,.MealDetails .Meal-D h2 {
+            color: var(--main-color);
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 20px;
+}
+
+.MealDetails .Meal-D .Meal-img h3::after  , .MealDetails .Meal-D h2::after{
+    content: '';
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.MealDetails .Meal-D .Meal-img h3::before  , .MealDetails .Meal-D h2::before{
+    content: '';
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.MealDetails .Meal-D .Meal-img  .buttons {
+    text-align: center;
+}
+
+.MealDetails .Meal-D .Meal-img  button{
+        border: none;
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 10px;
+        color: white;
+}
+
+
+.MealDetails .Meal-info h4{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+}
+.MealDetails .Meal-info h4 span {
+    font-size: 15px;
+    color: var(--span-color);
+}
+
+
+.MealDetails .Meal-info .spans span {
+    background-color: var(--main-color);
+    display: inline-block;
+    margin: 15px 15px 10px 0px;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.MealDetails .Meal-D .Meal-img .Source {
+    background-color: #6ECAAB;
+    margin-right: 15px;
+}
+
+.MealDetails .Meal-D .Meal-img .YouTub {
+    background-color: #E94F89;
+}
+
+.MealDetails .Meal-info p::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.MealDetails .Meal-info p::-webkit-scrollbar {
+    width: 5px;
+}
+.MealDetails .Meal-info p::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+
+@media screen and (max-width:800px ) {
+    .MealDetails .Meal-info {
+        margin-bottom: 80px;
+    }
+}
+
+/*  MealDetails end  */
+
+
+
+
+
+
+
+
+/*  Category start  */
+
+.Category .cat-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.Category .cat-img .Lyer{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #fea1167a;
+        bottom: -100%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.Category .cat-img .Lyer figcaption {
+    translate: -400px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    transition-delay: 0.3s;
+}
+
+.Category .cat-img:hover {
+    
+    .Lyer {
+        bottom: 0%;
+    }
+
+    figcaption {
+        translate:  0% ;
+    }
+}
+
+/*  Category end  */
+
+
+
+
+
+/*  Ingredients start  */
+
+.Ingredients .ing-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.Ingredients .ing-img .Lyer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fea1167a;
+    bottom: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Ingredients .ing-img .Lyer figcaption {
+translate: -400px;
+color: white;
+font-size: 40px;
+font-weight: 700;
+transition-delay: 0.3s;
+}
+
+
+.Ingredients .ing-img:hover {
+
+.Lyer {
+    bottom: 0%;
+}
+
+figcaption {
+    translate:  0% ;
+}
+}
+
+
+
+
+/*  Ingredients end  */
+
+
+
+
+
+/*  CategoryMeals start  */
+.CategoryMeals {
+    background-color: var(--bg-body);
+}
+
+.CategoryMeals .container {
+    background-color: var(--bg-section);
+}
+.CategoryMeals .Cat-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.CategoryMeals .Cat-img .Layer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fea1167a;
+    bottom: -100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CategoryMeals .Cat-img .Layer figcaption {
+translate: -400px;
+color: white;
+font-size: 40px;
+font-weight: 700;
+transition-delay: 0.3s;
+}
+
+
+.CategoryMeals .Cat-img:hover {
+
+.Layer {
+    bottom: 0%;
+}
+
+figcaption {
+    translate:  0% ;
+}
+}
+
+/*  CategoryMeals end  */
+
+
+
+
+
+
+
+
+
+/*  Contacts start  */
+
+.Contacts  {
+    min-height: 80vh;
+    
+    background-color: var(--bg-body);
+
+    .container {
+        background-color: var(--bg-section);
+        padding-top: 80px;
+    }
+     h2 {
+        font-family: "Gwendolyn", cursive;
+        position: relative;
+        display: inline-block;
+    } 
+    h2::after {
+        content: '';
+        position: absolute;
+        left: -80px;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: var(--main-color);
+    } 
+    h2::before {
+        content: '';
+        position: absolute;
+        right: -80px;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        background-color: var(--main-color);
+    }
+
+    & h2 , h3 {
+        text-align: center;
+    }
+    h3 {
+        font-weight: 700;
+    }
+    h2 , i{
+        color: var(--main-color);
+    }
+    i {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+    .Lay {
+        display: flex;
+        justify-content: space-around;
+        margin-block: 30px;
+    }
+    h5 {
+        color: var(--main-color);
+        position: relative;
+    }
+    h5::after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 50px;
+        background-color: var(--main-color);
+        translate: 12px 12px;
+    }
+    span {
+        color: var(--span-color);
+        font-weight: 500;
+    }
+    iframe {
+        width: 100% ;
+        min-height: 450px ;
+    }
+}
+
+.form-input {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+.form-input:focus {
+    color: var(--bs-body-color) !important;
+    border: 1px;
+    background-color: var(--bs-body-bg);
+    border-color: var(--main-color) !important; 
+    outline: 0;
+    box-shadow: 0 0 0 .10rem var(--hover-color) !important ;
+
+}
+
+.form-button {
+    color: white;
+    width: 100%;
+    height: 60px;
+    background-color: var(--main-color);
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin: 15px 0px 40px;
+}
+/*  Contacts end  */
+
+
+
+
+
+
+
+
+/*  Booking start  */
+.Booking {
+    background-color: var(--bg-body);
+
+    .container {
+        background-color: var(--second-color);
+    }
+    h4 {
+        color: var(--main-color);
+        font-size: 30px;
+        font-family: "Gwendolyn", cursive;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 50px;
+            background-color: var(--main-color);
+            translate: 12px 20px;
+        }
+    }
+
+    p {
+        font-size: 25px;
+        font-weight: 500;
+        color: white;
+    }
+    .imge {
+        background-image: url('./Assets/images/Contact/1.jpg');
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .form-btn {
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+        background-color: var(--main-color);
+        width: 80% ;
+        height: 50px;
+    }
+}
+/*  Booking end  */
+
+
+
+/*  Testimonial start  */
+.test-bg  {
+    background-color: var(--bg-body);
+}
+
+.testimonial {
+    overflow: hidden;
+    padding: 0 20px 100px 20px;
+    background-color: var(--bg-section);
+    margin-block: 60px;
+    
+
+    h5 {
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        font-family: cursive;
+        font-family: cursive;
+        color: var(--main-color);
+
+        &::after {
+            top: 50%;
+            width: 30px;
+            height: 2px;
+            content: "";
+            position: absolute;
+            transform: translate(10px);
+            background-color: var(--main-color);
+        }
+
+        &::before {
+            top: 50%;
+            width: 30px;
+            height: 2px;
+            content: "";
+            position: absolute;
+            transform: translate(-36px);
+            background-color: var(--main-color);
+        }
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-top: 20px;
+        text-align: center;
+        color: var(--second-color);
+
+
+    }
+
+    .content {
+        padding: 20px;
+
+        .item {
+            margin: 10px;
+            padding: 20px;
+            transition: all 1s;
+            border-radius: 10px;
+            border: 1px solid #66656530;
+            background-color: var(--bg-section);
+            cursor: pointer;
+
+            &:hover {
+                transition: all 1s;
+                background-color: rgba(248, 193, 74, 0.3);
+            }
+
+            i {
+
+                font-size: 40px;
+                margin-bottom: 10px;
+                color: var(--main-color);
+            }
+
+            p {
+                color: var(--span-color);
+            }
+
+            .info {
+                display: flex;
+                align-items: center;
+
+                figure {
+                    margin-right: 20px;
+
+                    img {
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+                }
+
+                h6 {
+                    margin: 0;
+                    font-weight: 800;
+                    color: var(--second-color);
+                }
+
+                small {
+                    color: var(--span-color);
+                }
+            }
+        }
+    }
+
+}
+
+.slick-slider {
+
+    .slick-current .item {
+        margin: 20px;
+        transition: all 1s;
+        transform: scale(1.2);
+        background-color: var(--main-color) !important;
+
+
+        i,
+        p,
+        h6,
+        small {
+            color: #fff !important;
+        }
+    }
+
+    .slick-dots li button {
+        border-radius: 50%;
+        background-color: #e2e1e1;
+
+    }
+
+    .slick-dots li button:before {
+        color: transparent !important;
+
+    }
+
+    .slick-dots li.slick-active button:before {
+        border-radius: 50%;
+        background-color: var(--main-color);
+    }
+}
+
+/*  Testimonial end  */
+
+
+
+
+
+/* NotFound start  */
+.NotFound {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* NotFound end  */
+
+
+
+
+
+/* Footer start  */
+footer {
+    padding-block: 50px;
+    background-color: #0F172B;
+    
+}
+
+footer h5 {
+    color: var(--main-color);
+    font-size: 40px;
+    font-family: "Gwendolyn", cursive;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    
+}
+
+footer h5::after {
+    content: '';
+    background-color: var(--main-color);
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    right: -55px;
+    top: 55%;
+}
+
+footer p {
+    color: rgb(173, 172, 172);
+}
+
+
+footer .f-info1 ul {
+    padding: 0;
+    color: rgb(172, 170, 170);
+}
+
+footer .f-info1 ul li {
+list-style: none;
+padding-block: 5px;
+font-size: 18px;
+font-family: 'Heebo', sans-serif; 
+
+}
+
+footer .f-info1 ul li:hover {
+    scale: 1.05;
+    color: var(--hover-color);
+}
+
+footer .f-input  .f-email {
+    height: 40px;
+}
+
+footer .f-input  .f-email input {
+    height: 100%;
+    margin: 0;
+    vertical-align: middle;
+    outline-color: #feaf39 !important;
+}
+
+footer .f-input  .f-email input:focus-visible {
+    outline-color: #feaf39 !important;
+    outline-width: 5px;
+
+}
+
+footer .f-input  .f-email button {
+    border: none;
+    background-color: var(--main-color);
+    width: 80px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    height: 100% ;
+    margin: 0;
+    vertical-align: middle;
+}
+
+/* Footer end  */
+
+
+
+
+
