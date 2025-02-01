@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import MinHeader from './../Min-Header/MinHeader';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import axios from 'axios/unsafe/axios.js';
 
 
@@ -27,6 +27,8 @@ async function getMeal() {
     try {
             const {data} = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)            
             setMeal(data.meals[0])
+            console.log(data.meals[0]);
+            
             return data.meals[0]            
     } catch (error) {
         console.log(error);
@@ -77,8 +79,8 @@ useEffect(()=>{
                               <h3>{Meal.strMeal}</h3>
                               </div>
                               <div className="buttons">
-                                <button className='Source'>Source</button>
-                                <button className='YouTub'>YouTub</button>
+                                <button className='Source'><Link to={Meal.strSource} target='_blank' >Source</Link></button>
+                                <button className='YouTub'><Link to={Meal.strYoutube} target='_blank' >YouTub</Link></button>
                               </div>
                             </div>
                           </div>
