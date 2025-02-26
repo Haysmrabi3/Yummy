@@ -38,7 +38,7 @@ export default function AboutUs() {
             <div className="row mt-5 gx-5">
               <div className="col-md-6 col-sm-12">
                   <div className="imgs">
-                    <div className="row overflow-hidden g-3">
+                    <div className="row  g-3">
 
                       <div className="col-6 ">
                         <div className="img1 w-100 ">

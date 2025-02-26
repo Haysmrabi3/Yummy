@@ -170,7 +170,6 @@
 
 .Cart-shadow {
     box-shadow: 0 0 8px #00000014;
-    background-color: white !important;
 }
 
 
@@ -184,17 +183,14 @@
     background-color: var(--bg-section);
     padding: 20px;
     transition: all 0.8s;
-    cursor: pointer;
-    
+    cursor: pointer !important;
 }
 
 
 .Service .cart:hover  {
     background-color: var(--hover-color);
-
     & i , p , h3 {
         color: white;
-
     } 
 
 }
