@@ -57,7 +57,7 @@ object-assign
  */
 
 /**
- * react-router v7.0.1
+ * react-router v7.2.0
  *
  * Copyright (c) Remix Software Inc.
  *
